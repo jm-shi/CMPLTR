@@ -16,8 +16,10 @@
 
   {{#if previousRoutines.routines}}
   {{else}}
-  <div class="center-text" style="margin-bottom:1em;">You have no archived routines.</div>
-  {{/if}}
+  <div class="container">
+    <div class="alert alert-secondary center-text" role="alert">You have no archived routines.
+    </div>
+  </div> {{/if}}
 
   {{#each previousRoutines.routines}}
   <div class="container">

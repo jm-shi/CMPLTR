@@ -16,8 +16,10 @@
 
   {{#if currentRoutines.routines}}
   {{else}}
-  <div class="center-text" style="margin-bottom:1em;">You have no current routines.</div>
-  {{/if}}
+  <div class="container">
+    <div class="alert alert-secondary center-text" role="alert">You have no current routines.
+    </div>
+  </div> {{/if}}
 
   {{#each currentRoutines.routines}}
   <div class="container">
