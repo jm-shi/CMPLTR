@@ -192,21 +192,28 @@
 <script src="../js/repeatButtons.js"></script>
 
 <script>
-  $('form').submit(function (event) {
-    const daysToCompleteValue = $('#daysToComplete').val();
+  $("#alarm").click(function () {
+    ga('send', 'event', 'clickAlarm', 'click');
+  });
+  $("#alarm").change(function () {
+    ga('send', 'event', 'changeAlarm', 'change');
+  });
+
+  $("form").submit(function (event) {
+    const daysToCompleteValue = $("#daysToComplete").val();
     if (daysToCompleteValue && (daysToCompleteValue <= 0 || daysToComplete > 365)) {
       event.preventDefault();
       event.stopPropagation();
     }
-    this.classList.add('was-validated');
+    this.classList.add("was-validated");
   });
 
-  $('#daysToComplete').keyup(function () {
-    const daysToCompleteValue = $('#daysToComplete').val();
+  $("#daysToComplete").keyup(function () {
+    const daysToCompleteValue = $("#daysToComplete").val();
     if (!daysToCompleteValue || daysToCompleteValue <= 0 || daysToCompleteValue > 365) {
-      this.setCustomValidity('Value must be greater than zero and no more than 365.');
+      this.setCustomValidity("Value must be greater than zero and no more than 365.");
     } else {
-      this.setCustomValidity('');
+      this.setCustomValidity("");
     }
   });
 
