@@ -56,6 +56,10 @@ self.__precacheManifest = [
     "revision": "79c41af288c0b0de17fd0b56b9ef7022"
   },
   {
+    "url": "images/icons/icon-150x150.png",
+    "revision": "211f6545b028a06c47b076a191fe0217"
+  },
+  {
     "url": "images/icons/icon-152x152.png",
     "revision": "56bdd4bb4defcdae89d6583d71593d1f"
   },
@@ -78,6 +82,22 @@ self.__precacheManifest = [
   {
     "url": "images/icons/icon-96x96.png",
     "revision": "c0623d42610aa5ad0ae373ed5a5541e8"
+  },
+  {
+    "url": "images/icons/launch-1125x2436.png",
+    "revision": "7894c1061764a5d9b5e55ca0166e1ec8"
+  },
+  {
+    "url": "images/icons/launch-1242x2208.png",
+    "revision": "e3afe48d444189e138c38ac4b9533124"
+  },
+  {
+    "url": "images/icons/launch-750x1334.png",
+    "revision": "b785f925131952aa220f9e5e5283b266"
+  },
+  {
+    "url": "images/icons/launch-828x1792.png",
+    "revision": "8174dade743c431998174520e28cbcfa"
   },
   {
     "url": "js/calendar.js",
@@ -105,7 +125,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.json",
-    "revision": "638008edc8c93e4da1efd3bf520f4086"
+    "revision": "e0c14de2f1348449edcbe69508442736"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
