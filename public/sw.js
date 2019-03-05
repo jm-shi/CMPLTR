@@ -84,20 +84,44 @@ self.__precacheManifest = [
     "revision": "c0623d42610aa5ad0ae373ed5a5541e8"
   },
   {
-    "url": "images/icons/launch-1125x2436.png",
-    "revision": "7894c1061764a5d9b5e55ca0166e1ec8"
+    "url": "images/icons/splash/ipad_splash.png",
+    "revision": "440445dd706040126618aedfeea313a4"
   },
   {
-    "url": "images/icons/launch-1242x2208.png",
-    "revision": "e3afe48d444189e138c38ac4b9533124"
+    "url": "images/icons/splash/ipadpro1_splash.png",
+    "revision": "30555adea231a5f58f42445a715b96ea"
   },
   {
-    "url": "images/icons/launch-750x1334.png",
-    "revision": "b785f925131952aa220f9e5e5283b266"
+    "url": "images/icons/splash/ipadpro2_splash.png",
+    "revision": "097eb55e5c953d5371ca1ed8ba95742d"
   },
   {
-    "url": "images/icons/launch-828x1792.png",
-    "revision": "8174dade743c431998174520e28cbcfa"
+    "url": "images/icons/splash/ipadpro3_splash.png",
+    "revision": "44bcec60164ab4603b9547b872d0f4d9"
+  },
+  {
+    "url": "images/icons/splash/iphone5_splash.png",
+    "revision": "c49e451956b232ee27a645c840a678d9"
+  },
+  {
+    "url": "images/icons/splash/iphone6_splash.png",
+    "revision": "e6928a8fe0e4c4db868bb5dd5c91962d"
+  },
+  {
+    "url": "images/icons/splash/iphoneplus_splash.png",
+    "revision": "d580f0f0116e456f902b04aa66efc5dc"
+  },
+  {
+    "url": "images/icons/splash/iphonex_splash.png",
+    "revision": "0dc8ce0a28781d5e87ce8e72979efd24"
+  },
+  {
+    "url": "images/icons/splash/iphonexr_splash.png",
+    "revision": "b89631647089e41034f99f648a98b644"
+  },
+  {
+    "url": "images/icons/splash/iphonexsmax_splash.png",
+    "revision": "34bb0c2efd23a53cc55e16a2f9a3714d"
   },
   {
     "url": "js/calendar.js",
