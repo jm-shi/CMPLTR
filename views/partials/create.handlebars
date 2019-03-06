@@ -193,9 +193,11 @@
 
 <script>
   $("#alarm").click(function () {
+    ga('create', 'UA-135616562-1', 'auto');
     ga('send', 'event', 'clickAlarm', 'click');
   });
   $("#alarm").change(function () {
+    ga('create', 'UA-135616562-1', 'auto');
     ga('send', 'event', 'changeAlarm', 'change');
   });
 
