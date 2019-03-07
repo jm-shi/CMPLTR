@@ -153,8 +153,8 @@
             {{/if}}
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
-            <button type="button" id={{currentRoutineData.id}} class="btn btn-dark completeRoutine">Save</button>
+            <button type="button" class="btn green-backgr white" data-dismiss="modal">Cancel</button>
+            <button type="button" id={{currentRoutineData.id}} class="btn green-backgr white completeRoutine">Save</button>
           </div>
         </div>
       </div>
@@ -298,7 +298,7 @@
               $(".modal-body").eq(0).html(`<div class="text-primary">You completed the routine but did not reach all your goals. Try harder next time!</div>`);
               playSound("../audio/halfComplete");
             }
-            $(".modal-footer").eq(0).html(`<a class="btn btn-dark" href="/currentRoutines">Back</a>`);
+            $(".modal-footer").eq(0).html(`<a class="btn green-backgr white" href="/currentRoutines">Back</a>`);
           });
       });
     });
