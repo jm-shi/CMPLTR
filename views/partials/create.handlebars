@@ -5,8 +5,8 @@
   <form class="needs-validation" method="post" action="/createRoutine" novalidate>
     <div class="form-group">
       <label for="title">Title</label>
-      <button type="button" class="question-btn" data-toggle="modal" data-target="#titleModal">
-        <i class="fas fa-question-circle"></i>
+      <button type="button" class="question-btn " data-toggle="modal" data-target="#titleModal">
+        <i class="fas fa-question-circle green-text"></i>
       </button>
       <span class="required">required</span>
       <input type="text" class="form-control" id="title" name="title" placeholder="Gym" required>
@@ -15,7 +15,7 @@
     <div class="form-group">
       <label for="daysToComplete">Days to Complete</label>
       <button type="button" class="question-btn" data-toggle="modal" data-target="#daysToCompleteModal">
-        <i class="fas fa-question-circle"></i>
+        <i class="fas fa-question-circle green-text"></i>
       </button>
       <span class="required">required</span>
       <input type="number" class="form-control" id="daysToComplete" name="daysToComplete" placeholder="30" required>
@@ -27,7 +27,7 @@
     <div class="form-group">
       <label for="alarm">Alarm</label>
       <button type="button" class="question-btn" data-toggle="modal" data-target="#alarmModal">
-        <i class="fas fa-question-circle"></i>
+        <i class="fas fa-question-circle green-text"></i>
       </button>
       <span class="optional">optional</span>
       <input class="alarm form-control" onfocus="(this.type='time')" id="alarm" name="alarm" placeholder="12:30 PM" />
@@ -35,7 +35,7 @@
     <div class="form-group">
       <label for="repeat">Repeat</label>
       <button type="button" class="question-btn" data-toggle="modal" data-target="#repeatModal">
-        <i class="fas fa-question-circle"></i>
+        <i class="fas fa-question-circle green-text"></i>
       </button>
       <span class="optional">optional</span>
       <div class="circular-btns">
@@ -62,7 +62,7 @@
     </div>
     {{else}}
     <div class="form-group">
-      <button type="button" class="btn btn-dark large-btn" data-toggle="modal" data-target="#alarmModal">
+      <button type="button" class="btn large-btn green-backgr white" data-toggle="modal" data-target="#alarmModal">
         Set Alarm
       </button>
 
@@ -113,7 +113,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark" data-dismiss="modal">Save</button>
+              <button type="button" class="btn green-backgr" data-dismiss="modal">Save</button>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
     <div class="form-group">
       <label for="goals">Goals</label>
       <button type="button" class="question-btn" data-toggle="modal" data-target="#goalsModal">
-        <i class="fas fa-question-circle"></i>
+        <i class="fas fa-question-circle green-text"></i>
       </button>
       <span class="optional">optional</span>
       <input type="text" class="form-control" id="goals" name="goals" placeholder="Lose 10 pounds, Run a 5K">
@@ -132,8 +132,8 @@
     </div>
     <div class="form-group">
       <label for="goalReward">Goal Reward</label>
-      <button type="button" class="question-btn" data-toggle="modal" data-target="#goalRewardModal">
-        <i class="fas fa-question-circle"></i>
+      <button type="button" class="question-btn " data-toggle="modal" data-target="#goalRewardModal">
+        <i class="fas fa-question-circle green-text"></i>
       </button>
       <span class="optional">optional</span>
       <input type="text" class="form-control" id="goalReward" name="goalReward" placeholder="Watch a movie">
@@ -144,7 +144,7 @@
     <input class="hidden" type="text" name="createdAt" id="createdAt">
 
     <div class="text-center">
-      <input type="submit" class="btn btn-dark large-btn mb-3" value="Save">
+      <input type="submit" class="btn green-backgr large-btn mb-3 white" value="Save">
       </input>
     </div>
   </form>

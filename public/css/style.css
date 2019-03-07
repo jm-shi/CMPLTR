@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  /* background-color: black; */
 }
 
 .alarm {
@@ -8,6 +9,14 @@ body {
   font-size: 2em;
   text-align: center;
   width: 100%;
+}
+
+.black-backgr {
+  background-color: black;
+}
+
+.black-text {
+  color: black;
 }
 
 .carousel-indicators li {
@@ -154,6 +163,17 @@ body {
   padding-top: 1em;
 }
 
+.green-text {
+  color: green;
+}
+
+.green-backgr {
+  background-color: green;
+}
+
+.lightgreen-backgr {
+  background-color: lightgreen;
+}
 .hidden {
   display: none;
 }
@@ -181,7 +201,7 @@ body {
 }
 
 .logo {
-  padding: 1.5em;
+  padding: 1em;
   text-align: center;
 }
 
@@ -196,6 +216,7 @@ body {
 
 .navbar {
   margin-bottom: 1em;
+  background-color: green;
 }
 
 .optional {
