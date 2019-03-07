@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('.circular-btn').click(function () {
-    $(this).toggleClass('btn-dark');
+    $(this).toggleClass('lightgreen-backgr');
   });
 
   $('button.monday').click(function () {
