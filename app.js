@@ -6,6 +6,7 @@ const express = require('express');
 const http = require('http');
 const path = require('path');
 const handlebars = require('express-handlebars');
+const bodyParser = require('body-parser');
 
 const index = require('./routes/index');
 const communityFeed = require('./routes/communityFeed');
@@ -15,6 +16,7 @@ const signup = require('./routes/signup');
 const profile = require('./routes/profile');
 const routine = require('./routes/routine');
 const notFound = require('./routes/notFound');
+const notification = require('./routes/notification');
 const tutorial = require('./routes/tutorial');
 
 const app = express();
@@ -32,6 +34,7 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Development only
@@ -60,8 +63,9 @@ app.get('/tutorial', tutorial.view);
 app.get('/routine/:id', routine.viewCurrentRoutine);
 app.get('/routine/previous/:id', routine.viewPreviousRoutine);
 app.post('/routine/:id', routine.updateCompletionLog);
+app.post('/subscribe', notification.subscribe);
 app.use(notFound.view); // 404 route
 
-http.createServer(app).listen(app.get('port'), function () {
+http.createServer(app).listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });

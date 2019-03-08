@@ -54,7 +54,7 @@
   {{> navbar back="/currentRoutines"}}
 
   <div class="container">
-    <h2 class="text-center">{{currentRoutineData.title}}</h2>
+    <h2 id="currentRoutineTitle" class="text-center">{{currentRoutineData.title}}</h2>
     <h4><strong>Goals:</strong></h4>
     <div class="goals-box rounded">
       {{#if currentRoutineData.goals}}
@@ -156,6 +156,7 @@
             <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
             <button type="button" id={{currentRoutineData.id}} class="btn btn-dark completeRoutine">Save</button>
           </div>
+
         </div>
       </div>
     </div>
@@ -175,12 +176,13 @@
     <div id="repeatSaturday" class="hidden">{{currentRoutineData.repeatSaturday}}</div>
     <div id="routineId" class="hidden">{{currentRoutineData.id}}</div>
     <div id="sound"></div>
-
   </div>
+
 
   {{> facebook}}
   {{> sw}}
   <script src="../js/facebook.js"></script>
+  <script src="../js/notifications.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -230,13 +232,33 @@
           </form>`);
         } else {
           $(".circular-btns").append(`
-            <form action="/routine/${routineId}" method="post" onsubmit="return confirm('Are you sure you want to log this day as complete?')">
+            <form action="/routine/${routineId}" data-dayNum=${index} method="post" onsubmit="return confirmComplete(this.getAttribute('data-dayNum'));" >
               <input type="hidden" value=${index} name="index" />
               <input type="checkbox" class="check day${index} hidden" name="isComplete" />
               <input type="submit" class="btn btn-light circular-btn submit day${index}" value='${workDay}'" />
             </form>`);
         }
       });
+
+      window.confirmComplete = function (dayNum) {
+        if (confirm("Are you sure you want to log this day as complete?")) {
+
+          const routineTitle = $("#currentRoutineTitle").html();
+          const dayNumber = parseInt(dayNum) + 1;
+
+          const details = {
+            routineTitle,
+            dayNumber
+          };
+
+          send(details).catch(function (err) {
+            console.log(err);
+          });
+          return true;
+        } else {
+          return false;
+        }
+      }
 
       function toggleChecked(dayNumber) {
         return function (event) {
@@ -298,6 +320,13 @@
               $(".modal-body").eq(0).html(`<div class="text-primary">You completed the routine but did not reach all your goals. Try harder next time!</div>`);
               playSound("../audio/halfComplete");
             }
+
+            const details = {
+              completeRoutine: true
+            }
+            send(details).catch(function (err) {
+              console.log(err);
+            });
             $(".modal-footer").eq(0).html(`<a class="btn btn-dark" href="/currentRoutines">Back</a>`);
           });
       });

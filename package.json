@@ -12,10 +12,12 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "3.x",
     "express-handlebars": "^3.0.0",
     "mongodb": "^3.1.13",
-    "mongoose": "*"
+    "mongoose": "*",
+    "web-push": "^3.3.3"
   },
   "engines": {
     "node": "8.9.x"
