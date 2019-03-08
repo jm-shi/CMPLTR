@@ -11,8 +11,17 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     .register('../sw.js', {
       scope: '/'
     })
-    .then(function(swReg) {
-      console.log('Service Worker is registered', swReg);
+    .then(function(register) {
+      console.log('Service Worker is registered', register);
+      // Register push
+      register.pushManager
+        .subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
+        })
+        .then(function() {
+          console.log('Registered pushed');
+        });
     })
     .catch(function(error) {
       console.error('Service Worker Error', error);

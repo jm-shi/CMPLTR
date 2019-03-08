@@ -31,23 +31,27 @@ self.__precacheManifest = [
   },
   {
     url: 'css/style.css',
-    revision: '6b3ce4a1f36ba431701abe43ae5c599a'
+    revision: 'd73878e9399135147e863c23995adff6'
   },
   {
     url: 'images/createRoutine.png',
-    revision: '4c2fdd06c8ff913ad427fe9e0733a096'
+    revision: '58a4d75493be11851377fa0fab3244bd'
   },
   {
     url: 'images/currentRoutine.png',
-    revision: '9c84c92083b036c810374691ed481590'
+    revision: '84f2d6c467f7a701acffefac4cb26a1b'
+  },
+  {
+    url: 'images/currentRoutine2.png',
+    revision: 'a5b162fc40f527283c65f1f7fdb315e5'
   },
   {
     url: 'images/currentRoutines.png',
-    revision: '70072ad8678786aa12e4b5dd1c9583c2'
+    revision: '245059d4f5a25f05bf2bf978af228dc6'
   },
   {
     url: 'images/home.png',
-    revision: 'da2e242f396a0f2d5ee1aaa276a18a39'
+    revision: '5511391a0acafbdd1828d37dfe8dad9d'
   },
   {
     url: 'images/icons/icon-128x128.png',
@@ -87,43 +91,43 @@ self.__precacheManifest = [
   },
   {
     url: 'images/icons/splash/ipad_splash.png',
-    revision: '440445dd706040126618aedfeea313a4'
+    revision: '8aee4607bcc02014e4e05fd4e37c6078'
   },
   {
     url: 'images/icons/splash/ipadpro1_splash.png',
-    revision: '30555adea231a5f58f42445a715b96ea'
+    revision: '28a3d873161f8c7a076346cd775adfaf'
   },
   {
     url: 'images/icons/splash/ipadpro2_splash.png',
-    revision: '097eb55e5c953d5371ca1ed8ba95742d'
+    revision: 'a181221533396d44892d380cd5aca93d'
   },
   {
     url: 'images/icons/splash/ipadpro3_splash.png',
-    revision: '44bcec60164ab4603b9547b872d0f4d9'
+    revision: 'ed03fb2120d0b8010def8b124ef50d26'
   },
   {
     url: 'images/icons/splash/iphone5_splash.png',
-    revision: 'c49e451956b232ee27a645c840a678d9'
+    revision: '0c99dbb8dff3ddbd1fca9e9acac0d26d'
   },
   {
     url: 'images/icons/splash/iphone6_splash.png',
-    revision: 'e6928a8fe0e4c4db868bb5dd5c91962d'
+    revision: '5cd336c90d6f33cc628c5fd50d17ade1'
   },
   {
     url: 'images/icons/splash/iphoneplus_splash.png',
-    revision: 'd580f0f0116e456f902b04aa66efc5dc'
+    revision: 'eae000ec05725d47b74ebd32c22aac12'
   },
   {
     url: 'images/icons/splash/iphonex_splash.png',
-    revision: '0dc8ce0a28781d5e87ce8e72979efd24'
+    revision: 'e7cf9db94cf48fe76f26fd4c6c7a990d'
   },
   {
     url: 'images/icons/splash/iphonexr_splash.png',
-    revision: 'b89631647089e41034f99f648a98b644'
+    revision: '0b4629bec19949cae58618af9a5922a4'
   },
   {
     url: 'images/icons/splash/iphonexsmax_splash.png',
-    revision: '34bb0c2efd23a53cc55e16a2f9a3714d'
+    revision: 'd0512b2da766da2934c9e10e2356f0cd'
   },
   {
     url: 'js/calendar.js',
@@ -142,8 +146,12 @@ self.__precacheManifest = [
     revision: 'fbd56220aefe33c2273f0150cd7034ab'
   },
   {
+    url: 'js/notifications.js',
+    revision: 'a75a45cb17555f23bd35e18894766d61'
+  },
+  {
     url: 'js/repeatButtons.js',
-    revision: 'ef5da77d93f625caaecc71e62074d6fb'
+    revision: '579ff3e44cb5676caa0f493611bf2279'
   },
   {
     url: 'js/routines.js',
@@ -154,7 +162,6 @@ self.__precacheManifest = [
     revision: 'e0c14de2f1348449edcbe69508442736'
   }
 ].concat(self.__precacheManifest || []);
-
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 self.addEventListener('push', function(e) {
