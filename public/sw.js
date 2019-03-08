@@ -55,79 +55,79 @@ self.__precacheManifest = [
   },
   {
     url: 'images/icons/icon-128x128.png',
-    revision: '168a77bb53438af233840fe4fb02a8bf'
+    revision: '47d63e7a28ddda833458c8b4342faf7e'
   },
   {
     url: 'images/icons/icon-144x144.png',
-    revision: '79c41af288c0b0de17fd0b56b9ef7022'
+    revision: '7a5aa052f484e18c22b8ca5b7a5a1269'
   },
   {
     url: 'images/icons/icon-150x150.png',
-    revision: '211f6545b028a06c47b076a191fe0217'
+    revision: '17377518739ba6a4bd9bee86629bf5c5'
   },
   {
     url: 'images/icons/icon-152x152.png',
-    revision: '56bdd4bb4defcdae89d6583d71593d1f'
+    revision: '62fc3542219ac72f3e5a41eaf5b65e0a'
   },
   {
     url: 'images/icons/icon-192x192.png',
-    revision: 'bedb777de1e5afddabad95a4e7dcd2b1'
+    revision: 'a3c97fa0227ca2ef02469c731e7da08c'
   },
   {
     url: 'images/icons/icon-384x384.png',
-    revision: '0809f6fabf9e47cf0687186e4909b6f5'
+    revision: 'fc329869357ba45159aa3f8d3d06abe7'
   },
   {
     url: 'images/icons/icon-512x512.png',
-    revision: 'f1556366e5f444e87ac35568c011df05'
+    revision: '73e056ea4875f8230a1abf44b05f5cb7'
   },
   {
     url: 'images/icons/icon-72x72.png',
-    revision: '32e6c26d3283bbe32219213060d5db4d'
+    revision: '759202fd5ca99b116ca361500a98d0fb'
   },
   {
     url: 'images/icons/icon-96x96.png',
-    revision: 'c0623d42610aa5ad0ae373ed5a5541e8'
+    revision: '4de3f10dca90239fda98d390b7aefb3f'
   },
   {
     url: 'images/icons/splash/ipad_splash.png',
-    revision: '8aee4607bcc02014e4e05fd4e37c6078'
+    revision: 'c58701236d43d3543237e5ffe49e88f9'
   },
   {
     url: 'images/icons/splash/ipadpro1_splash.png',
-    revision: '28a3d873161f8c7a076346cd775adfaf'
+    revision: '3221a21af768f1f4eeee78cc11de052d'
   },
   {
     url: 'images/icons/splash/ipadpro2_splash.png',
-    revision: 'a181221533396d44892d380cd5aca93d'
+    revision: 'f2f68116d1daf400f83b8f31da7c1468'
   },
   {
     url: 'images/icons/splash/ipadpro3_splash.png',
-    revision: 'ed03fb2120d0b8010def8b124ef50d26'
+    revision: 'a7811a661f85a41fd64a4a356dc09cba'
   },
   {
     url: 'images/icons/splash/iphone5_splash.png',
-    revision: '0c99dbb8dff3ddbd1fca9e9acac0d26d'
+    revision: '35a026e07311b49f4cd3ec4fedcd81c7'
   },
   {
     url: 'images/icons/splash/iphone6_splash.png',
-    revision: '5cd336c90d6f33cc628c5fd50d17ade1'
+    revision: '42300502e915e57e41f793cd351b0a1e'
   },
   {
     url: 'images/icons/splash/iphoneplus_splash.png',
-    revision: 'eae000ec05725d47b74ebd32c22aac12'
+    revision: 'f3ca6dddfb0248a8a829a676325a0bd1'
   },
   {
     url: 'images/icons/splash/iphonex_splash.png',
-    revision: 'e7cf9db94cf48fe76f26fd4c6c7a990d'
+    revision: 'a30a31efc6ddf8281881f8d4d75abd9a'
   },
   {
     url: 'images/icons/splash/iphonexr_splash.png',
-    revision: '0b4629bec19949cae58618af9a5922a4'
+    revision: 'c97befa50fdb510422482a43c2b47f3e'
   },
   {
     url: 'images/icons/splash/iphonexsmax_splash.png',
-    revision: 'd0512b2da766da2934c9e10e2356f0cd'
+    revision: '2a75a9e9dae0eb8c7a3e53a103a20319'
   },
   {
     url: 'js/calendar.js',
@@ -147,7 +147,7 @@ self.__precacheManifest = [
   },
   {
     url: 'js/notifications.js',
-    revision: 'a75a45cb17555f23bd35e18894766d61'
+    revision: '2735764d973379084d6fac05c6875692'
   },
   {
     url: 'js/repeatButtons.js',
