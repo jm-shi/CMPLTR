@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href={{#if back}}{{back}}{{else}}"javascript:history.back()"{{/if}}>
+  <a id="backButton" class="navbar-brand" href={{#if back}}{{back}}{{else}}"javascript:history.back()"{{/if}}>
     {{#if noBackBtn}}
     {{else}}
     <i class="fas fa-long-arrow-alt-left fa-2x white"></i>
@@ -40,5 +40,12 @@
   // const email = localStorage.getItem('email');
   if (first_name && document.getElementById('welcome')) {
     document.getElementById('welcome').innerHTML = `<strong>Welcome, ${first_name}</strong>`;
+  }
+
+  const previouslyFromCommunityFeed = localStorage.getItem('previouslyFromCommunityFeed');
+  console.log('previousFromCommunityFeed', previouslyFromCommunityFeed);
+  if (previouslyFromCommunityFeed === 'yes') {
+    localStorage.setItem('previouslyFromCommunityFeed', 'no');
+    document.getElementById('backButton').href = '/communityFeed';
   }
 </script>

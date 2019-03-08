@@ -60,11 +60,11 @@
         <i class="fas fa-user-circle fa-2x " style="margin-right: 10px; margin-top: 7px;"></i>
         {{name}} completed Day {{completedDayNumber}} of their routine "{{routineName}}"
       </div>
-      <span style="color:grey; margin-left: 40px;" >
-      {{date}} at {{time}}
+      <span style="color:grey; margin-left: 40px;">
+        {{date}} at {{time}}
       </span>
-      <a href={{routine}} class="routineButton card-link" style="float:right;">
-        <button type="button" class="btn green-backgr white btn-rounded btn-sm edit-btn">
+      <a href={{routine}} class="toDetailsPage routineButton card-link" style="float:right;">
+        <button id="viewMoreButton" type="button" class="btn green-backgr white btn-rounded btn-sm edit-btn">
           <i class="fas fa-eye"> <span style="font-family:Helvetica"> View More</span></i>
         </button>
       </a>
@@ -85,15 +85,23 @@
   {{> facebook}}
   {{> sw}}
   <script src="../js/facebook.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(".toDetailsPage").click(function (e) {
+        e.preventDefault();
+        const currentRoutinePageURL = $(this).attr("href");
+        window.localStorage.setItem('previouslyFromCommunityFeed', 'yes');
+        window.location.href = currentRoutinePageURL;
+      })
+    });
+  </script>
 
 </body>
 
