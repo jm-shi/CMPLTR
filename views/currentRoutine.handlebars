@@ -117,8 +117,9 @@
     <div class="routine circular-btns" style="flex-wrap: wrap">
     </div>
 
-    <button type="button" id="completeRoutineButton" class="btn btn-primary center-element" style="margin-bottom:1em;"
-      data-toggle="modal" data-target="#completeRoutineModal" data-backdrop="static" data-keyboard="false">
+    <button type="button" id="completeRoutineButton" class="btn green-backgr white center-element"
+      style="margin-bottom:1em;" data-toggle="modal" data-target="#completeRoutineModal" data-backdrop="static"
+      data-keyboard="false">
       Mark Routine As Finished
     </button>
 
@@ -153,8 +154,9 @@
             {{/if}}
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
-            <button type="button" id={{currentRoutineData.id}} class="btn btn-dark completeRoutine">Save</button>
+            <button type="button" class="btn green-backgr white" data-dismiss="modal">Cancel</button>
+            <button type="button" id={{currentRoutineData.id}}
+              class="btn green-backgr white completeRoutine">Save</button>
           </div>
 
         </div>
@@ -228,7 +230,7 @@
             <input type="hidden" value=${index} name="index" />
             <input type="hidden" value="off" name="isComplete" />
             <input type="checkbox" class="check day${index} hidden" name="isComplete" checked="checked" />
-            <input type="submit" class="btn btn-dark circular-btn submit day${index}" value='${workDay}'" />
+            <input type="submit" class="btn lightgreen-backgr circular-btn submit day${index}" value='${workDay}'" />
           </form>`);
         } else {
           $(".circular-btns").append(`
@@ -327,7 +329,8 @@
             send(details).catch(function (err) {
               console.log(err);
             });
-            $(".modal-footer").eq(0).html(`<a class="btn btn-dark" href="/currentRoutines">Back</a>`);
+
+            $(".modal-footer").eq(0).html(`<a class="btn green-backgr white" href="/currentRoutines">Back</a>`);
           });
       });
     });

@@ -2,33 +2,29 @@
     "communityFeedData": [
         {
             "name": "John" ,
-            "completedDayNumber": 5 ,
-            "routineName": "Play the Piano"
+            "completedDayNumber": 2 ,
+            "routineName": "Study math",
+            "time": "8:45 PM",
+            "date": "Today",
+            "image": "/images/icons/icon-152x152.png",
+            "routine": "/routine/33af38ec-f6ec-473f-99bf-72d6bab0785b"
         },
         {
             "name": "Patricia" ,
-            "completedDayNumber": 10 ,
-            "routineName": "Do Yoga"
+            "completedDayNumber": 8 ,
+            "routineName": "Go to gym",
+            "time": "8:32 PM",
+            "date": "Yesterday",
+            "routine": "/routine/4e53ad54-0a17-4b29-bfcd-c49438b0547c"
         },
         {
             "name": "Robert" ,
-            "completedDayNumber": 25 ,
-            "routineName": "Learn French"
-        },
-        {
-            "name": "Joe" ,
-            "completedDayNumber": 17 ,
-            "routineName": "Learn Latin"
-        },
-        {
-            "name": "Anna" ,
-            "completedDayNumber": 6 ,
-            "routineName": "Do Homework"
-        },
-        {
-            "name": "Ben" ,
-            "completedDayNumber": 99 ,
-            "routineName": "Code in Java"
+            "completedDayNumber": 11 ,
+            "routineName": "Learn guitar",
+            "time": "8:31 PM",
+            "date": "2 days ago",
+            "routine": "/routine/e81f2e68-b6b4-447b-9e83-3ae4323f1cc4"
         }
+        
     ]
 }

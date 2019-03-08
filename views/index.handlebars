@@ -61,17 +61,17 @@
 	</div>
 
 	<div class="container">
-		<a class="btn btn-dark large-btn home-btn" href="createRoutine">
-			<i class="fas fa-plus fa-2x" style="margin-right:0.5em;"></i>
-			<div style="font-size: 1.5em;">Create</div>
+		<a class="btn green-backgr large-btn home-btn" href="createRoutine">
+			<i class="fas fa-plus white fa-2x" style="margin-right:0.5em;"></i>
+			<div class="white" style="font-size: 1.5em;">Create</div>
 		</a>
-		<a class="btn btn-dark large-btn home-btn" href="currentRoutines">
-			<i class="fas fa-calendar-alt fa-2x" style="margin-right:0.5em;"></i>
-			<div style="font-size: 1.5em;">Current</div>
+		<a class="btn green-backgr large-btn home-btn" href="currentRoutines">
+			<i class="fas fa-calendar-alt white fa-2x" style="margin-right:0.5em;"></i>
+			<div class="white" style="font-size: 1.5em;">Current</div>
 		</a>
-		<a class="btn btn-dark large-btn home-btn" href="previousRoutines">
-			<i class="fas fa-archive fa-2x" style="margin-right:0.5em;"></i>
-			<div style="font-size: 1.5em;">Archive</div>
+		<a class="btn green-backgr large-btn home-btn" href="previousRoutines">
+			<i class="fas fa-archive white fa-2x" style="margin-right:0.5em;"></i>
+			<div class="white" style="font-size: 1.5em;">Archive</div>
 		</a>
 
 		<div class="container center-horizontal">
@@ -79,24 +79,24 @@
 
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<div class="center-vertical" style="padding: 1em; border-radius: 5px;">
+						<div class="center-vertical" style="padding: 0.5em; border-radius: 5px;">
 							<div style="margin-right: 10px;">
 								<i class="fas fa-user-circle fa-2x"></i>
 							</div>
 							<div class="center-vertical word-break word-break-ellipsis">
-								Larry completed day 900 of their routine "Be Amazing"
+								Larry completed Day 900 of their routine "Be Amazing"
 							</div>
 						</div>
 					</div>
 
 					{{#each communityFeed.communityFeedData}}
 					<div class="carousel-item">
-						<div class="center-vertical" style="padding: 1em; border-radius: 5px;">
+						<div class="center-vertical" style="padding: 0.5em; border-radius: 5px;">
 							<div style="margin-right: 10px;">
 								<i class="fas fa-user-circle fa-2x"></i>
 							</div>
 							<div class="center-vertical word-break word-break-ellipsis">
-								{{name}} completed day {{completedDayNumber}} of their routine "{{routineName}}"
+								{{name}} completed Day {{completedDayNumber}} of their routine "{{routineName}}"
 							</div>
 						</div>
 					</div>
@@ -104,7 +104,7 @@
 
 					<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
+						<span class="sr-only">Prev</span>
 					</a>
 					<a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -114,9 +114,9 @@
 			</div>
 
 		</div>
-		<a class="btn btn-dark large-btn home-btn" href="communityFeed">
-			<i class="fas fa-users fa-2x" style="margin-right:0.5em;"></i>
-			<div style="font-size: 1.5em;">Community</div>
+		<a class="btn green-backgr large-btn home-btn" href="communityFeed">
+			<i class="fas fa-users white fa-2x" style="margin-right:0.5em;"></i>
+			<div class="white" style="font-size: 1.5em;">Community</div>
 		</a>
 
 		{{> facebook}}
