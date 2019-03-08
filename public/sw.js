@@ -155,11 +155,17 @@ self.__precacheManifest = [
   }
 ].concat(self.__precacheManifest || []);
 
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
 self.addEventListener('push', function(e) {
-  const data = e.data.json();
+  let data = {
+    title: 'CMPLTR'
+  };
+  if (e.data) {
+    data = e.data.json();
+  }
   self.registration.showNotification(data.title, {
     body: data.details,
     icon: '/images/icons/icon-72x72.png'
   });
 });
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
