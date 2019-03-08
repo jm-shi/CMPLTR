@@ -21,6 +21,9 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
         })
         .then(function() {
           console.log('Registered pushed');
+        })
+        .catch(function(err) {
+          console.log(err);
         });
     })
     .catch(function(error) {

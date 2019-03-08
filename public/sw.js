@@ -169,10 +169,16 @@ self.addEventListener('push', function(e) {
     title: 'CMPLTR'
   };
   if (e.data) {
-    data = e.data.json();
+    data = e.data.json().catch(function(err) {
+      console.log(err);
+    });
   }
-  self.registration.showNotification(data.title, {
-    body: data.details,
-    icon: '/images/icons/icon-72x72.png'
-  });
+  self.registration
+    .showNotification(data.title, {
+      body: data.details,
+      icon: '/images/icons/icon-72x72.png'
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
 });
