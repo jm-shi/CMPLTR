@@ -168,11 +168,9 @@ self.addEventListener('push', function(e) {
   let data = {
     title: 'CMPLTR'
   };
-  if (e.data) {
-    data = e.data.json().catch(function(err) {
-      console.log(err);
-    });
-  }
+  try {
+    data = e.data.json();
+  } catch (err) {}
   self.registration
     .showNotification(data.title, {
       body: data.details,
