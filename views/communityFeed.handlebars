@@ -51,7 +51,7 @@
 </head>
 
 <body>
-  {{> navbar}}
+  {{> navbar back="/home"}}
 
   <div class="container">
     {{#each communityFeed.communityFeedData}}
@@ -63,23 +63,69 @@
       <span style="color:grey; margin-left: 40px;">
         {{date}} at {{time}}
       </span>
-      <a href={{routine}} class="toDetailsPage routineButton card-link" style="float:right;">
-        <button id="viewMoreButton" type="button" class="btn green-backgr white btn-rounded btn-sm edit-btn">
-          <i class="fas fa-eye"> <span style="font-family:Helvetica"> View More</span></i>
+      <div data-id={{id}} class="viewMore card-link" style="float:right;">
+        <button type="button" class="btn green-backgr white btn-rounded btn-sm edit-btn">
+          <i class="fas fa-eye">
+            <span class="view" data-view={{id}} style="font-family:Helvetica"> View More</span>
+          </i>
         </button>
-      </a>
-    </div>
-    {{!-- {{#if routine}}
-        <a href={{routine}}>Click me</a>
-        {{/if}} --}}
+      </div>
 
-    {{!-- <span class="center-vertical" style="margin-top: 10px;">
-        {{#if image}}
-        <img src={{image}} />
+      <div id={{id}} class="extraDetails mt-3 hidden">
+        {{#if goals}}
+        <div class="center-vertical">
+          <i class="fas fa-bullseye" style="margin-right: 10px;"></i>
+          <div style="margin-top:0.8px;">{{goals}}</div>
+        </div>
         {{/if}}
-        
-      </span> --}}
+
+        {{#if alarm}}
+        <div class="center-vertical">
+          <i class="fas fa-bell" style="margin-right: 12px;"></i>
+          <span id="alarmTime">{{alarm}}</span>
+        </div>
+        {{/if}}
+
+        {{#if everyOtherDay}}
+        <div class="flex">
+          <i class="fas fa-running" style="margin-right: 13px;"></i>
+          <div>Every other day</div>
+        </div>
+        {{else}}
+        {{#if everyDay}}
+        <div class="center-vertical">
+          <i class="fas fa-running" style="margin-right: 13px;"></i>
+          <div>Everyday</div>
+        </div>
+        {{else}}
+        <div class="center-vertical">
+          <i class="fas fa-running" style="margin-right: 13px"></i>
+          <div>
+            {{#if repeatSunday}} Sun{{/if}}
+            {{#if repeatMonday}} Mon{{/if}}
+            {{#if repeatTuesday}} Tue{{/if}}
+            {{#if repeatWednesday}} Wed{{/if}}
+            {{#if repeatThursday}} Thu{{/if}}
+            {{#if repeatFriday}} Fri{{/if}}
+            {{#if repeatSaturday}} Sat{{/if}}
+          </div>
+
+        </div>
+        {{/if}}
+        {{/if}}
+
+        {{#if goalReward}}
+        <div class="center-vertical">
+          <i class="fa fa-gift" style="margin-right: 10px;"></i>
+
+          <div style="margin-top:0.8px;">{{goalReward}}</div>
+
+        </div>
+        {{/if}}
+      </div>
+    </div>
     {{/each}}
+
   </div>
 
   {{> facebook}}
@@ -94,12 +140,27 @@
     crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
+      $(".viewMore").click(function () {
+        const routineID = $(this).attr("data-id");
+        const currentToggleState = $(this).find(`[data-view=${routineID}]`)[0];
+
+        if (currentToggleState.textContent.trim() === "View More") {
+          currentToggleState.textContent = "View Less";
+        } else {
+          currentToggleState.textContent = "View More";
+        }
+
+        $(`#${routineID}`).toggleClass("hidden");
+      });
+
+      /*
       $(".toDetailsPage").click(function (e) {
         e.preventDefault();
         const currentRoutinePageURL = $(this).attr("href");
         window.localStorage.setItem('previouslyFromCommunityFeed', 'yes');
         window.location.href = currentRoutinePageURL;
       })
+      */
     });
   </script>
 

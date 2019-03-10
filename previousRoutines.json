@@ -6,18 +6,7 @@
       "title": "Learn C++",
       "daysCompleted": 10,
       "daysToComplete": 10,
-      "completionChart": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
+      "completionChart": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
       "alarm": "12:00",
       "repeatMonday": "on",
       "repeatTuesday": "on",
@@ -27,9 +16,7 @@
       "repeatSaturday": "on",
       "repeatSunday": "on",
       "everyDay": true,
-      "goals": [
-        "Implement a binary search tree"
-      ],
+      "goals": ["Implement a binary search tree"],
       "goalReward": "Attend Warriors game",
       "completedGoalsCount": 1,
       "goalsArray": [
@@ -46,22 +33,7 @@
       "title": "Learn Photoshop CS6",
       "daysCompleted": 12,
       "daysToComplete": 14,
-      "completionChart": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1
-      ],
+      "completionChart": [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1],
       "alarm": "10:00",
       "repeatMonday": "on",
       "repeatFriday": "on",
@@ -91,19 +63,8 @@
       "repeatSaturday": "on",
       "daysCompleted": 7,
       "daysToComplete": 8,
-      "completionChart": [
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1
-      ],
-      "goals": [
-        "Pass the final exam"
-      ],
+      "completionChart": [1, 1, 1, 0, 1, 1, 1, 1],
+      "goals": ["Pass the final exam"],
       "goalReward": "Go on a cruise",
       "completedGoalsCount": 1,
       "goalsArray": [
@@ -122,27 +83,8 @@
       "repeatSunday": "on",
       "daysCompleted": 14,
       "daysToComplete": 16,
-      "completionChart": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        1,
-        1
-      ],
-      "goals": [
-        "Be able to type at least 80 words per minute"
-      ],
+      "completionChart": [1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1],
+      "goals": ["Be able to type at least 80 words per minute"],
       "goalReward": "Buy a new phone",
       "completedGoalsCount": 1,
       "goalsArray": [

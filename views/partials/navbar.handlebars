@@ -42,10 +42,12 @@
     document.getElementById('welcome').innerHTML = `<strong>Welcome, ${first_name}</strong>`;
   }
 
-  const previouslyFromCommunityFeed = localStorage.getItem('previouslyFromCommunityFeed');
-  console.log('previousFromCommunityFeed', previouslyFromCommunityFeed);
-  if (previouslyFromCommunityFeed === 'yes') {
-    localStorage.setItem('previouslyFromCommunityFeed', 'no');
-    document.getElementById('backButton').href = '/communityFeed';
-  }
+  /*
+    const previouslyFromCommunityFeed = localStorage.getItem('previouslyFromCommunityFeed');
+    console.log('previousFromCommunityFeed', previouslyFromCommunityFeed);
+    if (previouslyFromCommunityFeed === 'yes') {
+      localStorage.setItem('previouslyFromCommunityFeed', 'no');
+      document.getElementById('backButton').href = '/communityFeed';
+    }
+  */
 </script>
