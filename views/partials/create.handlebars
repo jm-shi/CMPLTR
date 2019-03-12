@@ -19,7 +19,7 @@
       </button>
       <span class="required">required</span>
       <input type="number" class="form-control" id="daysToComplete" name="daysToComplete" placeholder="30" required>
-      <div class="invalid-feedback">Please enter the number of days (between 1 and 365) to complete the routine.</div>
+      <div class="invalid-feedback">Please enter the number of days (between 0 and 366) to complete the routine.</div>
     </div>
 
 
@@ -158,7 +158,7 @@
 <!-- Days to Complete Modal -->
 {{> modal modalId="daysToCompleteModal" modalTitle="Days to Complete" modalLabel="daysToCompleteModalLabel"
   definition="The number of work days to finish the routine. Does not include rest days. 
-  Your routine must be between 1 and 365 work days (inclusive) long."}}
+  Your routine must be at least 1 and no more than 365 work days long."}}
 
 <!-- Alarm Modal -->
 {{> modal modalId="alarmModal" modalTitle="Alarm" modalLabel="alarmModalLabel"

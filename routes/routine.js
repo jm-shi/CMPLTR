@@ -151,7 +151,11 @@ exports.editRoutine = function(req, res) {
         );
       } else {
         let completedDaysToRemove = 0;
-        for (let i = routine.daysToComplete; i < routine.length; i++) {
+        for (
+          let i = req.body.daysToComplete;
+          i < routine.completionChart.length;
+          i++
+        ) {
           if (routine.completionChart[i] === 1) {
             completedDaysToRemove++;
           }
