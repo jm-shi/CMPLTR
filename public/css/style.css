@@ -209,13 +209,9 @@ body {
   width: 100%;
 }
 
-.logo {
-  padding: 1em;
-  text-align: center;
-}
-
-.logo h1 {
-  font-size: 4.5em;
+.logo-img {
+  height: auto;
+  max-width: 100%;
 }
 
 .marquee-item {
