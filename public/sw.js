@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     url: 'css/style.css',
-    revision: 'd73878e9399135147e863c23995adff6'
+    revision: 'f865e938ee74e74573ad931d7477d8b9'
   },
   {
     url: 'images/createRoutine.png',
@@ -90,44 +90,48 @@ self.__precacheManifest = [
     revision: '4de3f10dca90239fda98d390b7aefb3f'
   },
   {
-    url: 'images/icons/splash/ipad_splash.png',
-    revision: 'c58701236d43d3543237e5ffe49e88f9'
+    url: 'images/logo.png',
+    revision: '722118d1fdc96e0b421c415e10ea0735'
   },
   {
-    url: 'images/icons/splash/ipadpro1_splash.png',
-    revision: '3221a21af768f1f4eeee78cc11de052d'
+    url: 'images/splash/ipad_splash.png',
+    revision: 'b9f1f9ed7d2336b8aa340ad31bf92fe9'
   },
   {
-    url: 'images/icons/splash/ipadpro2_splash.png',
-    revision: 'f2f68116d1daf400f83b8f31da7c1468'
+    url: 'images/splash/ipadpro1_splash.png',
+    revision: '9409eb233852f178a64ee6397aca5267'
   },
   {
-    url: 'images/icons/splash/ipadpro3_splash.png',
-    revision: 'a7811a661f85a41fd64a4a356dc09cba'
+    url: 'images/splash/ipadpro2_splash.png',
+    revision: '7a7d0f2d97a2c7def984089ce2ad121d'
   },
   {
-    url: 'images/icons/splash/iphone5_splash.png',
-    revision: '35a026e07311b49f4cd3ec4fedcd81c7'
+    url: 'images/splash/ipadpro3_splash.png',
+    revision: '7fe392b6aa85361cd1aaabf935ceff72'
   },
   {
-    url: 'images/icons/splash/iphone6_splash.png',
-    revision: '42300502e915e57e41f793cd351b0a1e'
+    url: 'images/splash/iphone5_splash.png',
+    revision: 'f1bf28c74a76d4aee075924ebe8d86c3'
   },
   {
-    url: 'images/icons/splash/iphoneplus_splash.png',
-    revision: 'f3ca6dddfb0248a8a829a676325a0bd1'
+    url: 'images/splash/iphone6_splash.png',
+    revision: '5d30a836790e5ee3a352711d33dd2a9c'
   },
   {
-    url: 'images/icons/splash/iphonex_splash.png',
-    revision: 'a30a31efc6ddf8281881f8d4d75abd9a'
+    url: 'images/splash/iphoneplus_splash.png',
+    revision: '53a93d0c26000f6a552b4fc0f9ecb4d4'
   },
   {
-    url: 'images/icons/splash/iphonexr_splash.png',
-    revision: 'c97befa50fdb510422482a43c2b47f3e'
+    url: 'images/splash/iphonex_splash.png',
+    revision: '5150ad2e20296873f54adfc0a699a297'
   },
   {
-    url: 'images/icons/splash/iphonexsmax_splash.png',
-    revision: '2a75a9e9dae0eb8c7a3e53a103a20319'
+    url: 'images/splash/iphonexr_splash.png',
+    revision: '41def3fd5270f15f3e5e8a3872eb4a96'
+  },
+  {
+    url: 'images/splash/iphonexsmax_splash.png',
+    revision: 'e4d8ac3d8c6864155cb4a1bc6c0d9199'
   },
   {
     url: 'js/calendar.js',
