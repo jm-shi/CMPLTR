@@ -192,7 +192,7 @@ body {
   display: flex;
   font-size: 1.5em;
   justify-content: center;
-  height: 5em;
+  height: 4.5em;
   margin-bottom: 1em;
   padding: 0.5em;
 }
@@ -200,7 +200,7 @@ body {
 .home-header {
   font-size: 1.5em;
   font-style: italic;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 
@@ -210,8 +210,8 @@ body {
 }
 
 .logo-img {
-  height: 100%;
-  width: 70%;
+  height: auto;
+  max-width: 100%;
 }
 
 .marquee-item {
