@@ -141,18 +141,20 @@ exports.editRoutine = function(req, res) {
   const id = req.params.id;
   const allRoutines = currentRoutines.routines;
 
-  allRoutines.some(function(routine) {
+  allRoutines.forEach(function(routine) {
+    const originalDaysToComplete = parseInt(routine.daysToComplete);
+    const updatedDaysToComplete = parseInt(req.body.daysToComplete);
     if (routine.id === id) {
       routine.title = req.body.title;
-      if (routine.daysToComplete <= req.body.daysToComplete) {
-        const daysToAdd = req.body.daysToComplete - routine.daysToComplete;
+      if (originalDaysToComplete <= updatedDaysToComplete) {
+        const daysToAdd = updatedDaysToComplete - originalDaysToComplete;
         routine.completionChart = routine.completionChart.concat(
           Array(daysToAdd).fill(0)
         );
       } else {
         let completedDaysToRemove = 0;
         for (
-          let i = req.body.daysToComplete;
+          let i = updatedDaysToComplete;
           i < routine.completionChart.length;
           i++
         ) {
@@ -163,10 +165,10 @@ exports.editRoutine = function(req, res) {
         routine.daysCompleted = routine.daysCompleted - completedDaysToRemove;
         routine.completionChart = routine.completionChart.slice(
           0,
-          req.body.daysToComplete
+          updatedDaysToComplete
         );
       }
-      routine.daysToComplete = req.body.daysToComplete;
+      routine.daysToComplete = updatedDaysToComplete;
 
       routine.alarm = req.body.alarm;
       routine.repeatMonday = req.body.repeatMonday;
