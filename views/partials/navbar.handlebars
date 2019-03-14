@@ -1,7 +1,7 @@
 {{#if hasLogo}}
-<nav class="navbar navbar-expand-lg mb-0">
+<nav class="navbar sticky-top navbar-expand-lg mb-0">
   {{else}}
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar sticky-top navbar-expand-lg">
     {{/if}}
     <a id="backButton" class="navbar-brand" href={{#if back}}{{back}}{{else}}"javascript:history.back()"{{/if}}>
       {{#if noBackBtn}}
