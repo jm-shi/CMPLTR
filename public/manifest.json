@@ -1,7 +1,7 @@
 {
   "name": "Completer",
   "short_name": "CMPLTR",
-  "theme_color": "#005E20",
+  "theme_color": "#008000",
   "background_color": "#000",
   "display": "standalone",
   "Scope": "/",
